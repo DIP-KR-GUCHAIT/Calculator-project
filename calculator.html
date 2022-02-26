@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIP-GUCHAIT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+        }
+
+        h2 {
+            text-align: center;
+            position: relative;
+            top: 44px;
+        }
+
+        .calculator {
+            background-color: orange;
+            border: 5px double;
+            width: 400px;
+            margin: 10px auto;
+            padding-top: 30px;
+            border-radius: 10px;
+            font-size: 0;
+            box-shadow: 12px 12px 15px red;
+        }
+
+        .calculator #cal-display {
+            padding: 5px;
+            width: 340px;
+            height: 80px;
+            text-align: right;
+            font-size: 40px;
+            letter-spacing: 5px;
+            font-weight: bold;
+            border: 4px solid;
+            border-radius: 10px;
+        }
+
+        .cal-body {
+            width: 350px;
+            margin: 10px auto;
+        }
+
+        .btn {
+            width: 80px;
+            height: 70px;
+            margin: 3px;
+            font-size: 40px;
+            background-color: black;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: skyblue;
+            text-shadow: 5px 5px 5px rgb(132, 0, 255);
+        }
+
+
+
+
+
+        @media screen and (max-width: 375px) {
+            body {
+                background-color: blue;
+            }
+
+            .calculator {
+                width: 300px;
+                box-shadow: 6px 6px 6px red;
+            }
+
+            .calculator #cal-display {
+                width: 250px;
+            }
+
+            .cal-body {
+                width: 250px;
+            }
+
+            .btn {
+                width: 56px;
+                height: 50px;
+                margin: 3px;
+                font-size: 20px;
+                background-color: black;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Claculator</h2>
+    <div class="calculator">
+        <div class="cal-head">
+            <input type="text" id="cal-display" maxlength="10px">
+        </div>
+        <div class="cal-body">
+            <div>
+                <input type="button" class="btn" value="ON">
+                <input type="button" class="btn" value="OFF">
+                <input type="button" class="btn" value="<">
+                <input type="button" class="btn" value=">">
+            </div>
+            <div>
+                <input type="button" class="btn" value="9">
+                <input type="button" class="btn" value="M+">
+                <input type="button" class="btn" value="M-">
+                <input type="button" class="btn" value="+/-">
+            </div>
+            <div>
+                <input type="button" class="btn" value="6">
+                <input type="button" class="btn" value="7">
+                <input type="button" class="btn" value="8">
+                <input type="button" class="btn" value="%">
+            </div>
+            <div>
+                <input type="button" class="btn" value="3">
+                <input type="button" class="btn" value="4">
+                <input type="button" class="btn" value="5">
+                <input type="button" class="btn" value="-">
+            </div>
+            <div>
+                <input type="button" class="btn" value="0">
+                <input type="button" class="btn" value="1">
+                <input type="button" class="btn" value="2">
+                <input type="button" class="btn" value="=">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
